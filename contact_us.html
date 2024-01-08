@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-</head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Us">
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <title>contact form</title>
   </head>
   </body>
-           
-    <!-- THE PAGE BANNER -->
-    <div class="banner">
-      <img src="../assets/images/SquareEyes_Logo.png" class="banner-logo" />
-      <div class="banner-buttons-div">
-        <a href="index.html"><img src="../assets/images/Home Page.png" class="banner-icon"/></a>
+    <header class="banner">
+      <img src="../assets/images/SquareEyes_Logo.png" alt="Square Eyes_Logo" class="banner-logo" />
+      <nav class="banner-buttons-div">
+        <a href="index.html"><img src="../assets/images/Home Page.png" alt="home page icon" class="banner-icon"/></a>
         <a href="genre.html" class="banner-button">Genre</a>
         <a href="about_us.html" class="banner-button">About us</a>
         <a href="contact_us.html" class="banner-button">Contact us</a>
-        <a href="checkout.html"><img src="../assets/images/cart.png" class="banner-icon"/></a>
-      </div>
-    </div>
+        <a href="checkout.html"><img src="../assets/images/cart.png" alt="cart icon"  class="banner-icon"/></a>
+      </nav>
+    </header>
 
-     <!-- SITE DESCRIPTION CONTACT-->
-     <div class="featured-site-div">
-      <div class="featured-site-description-div">
-        <h4 class="featured-site-h">contact us</h4>
-         <!--CONTACT FORM-->
-     <div class="container">
-      <form action="">
-          <label for="fname">first name</label>
-           <input type="text" id="fname" name="firstname" placeholder="your name..">
-           <label for="lname">last name</label>
-           <input type="text" id="lname" name="lastname" placeholder="your last name">
-           <label for="email">email</label>
-           <input type="text" id="email" name="email" placeholder="email address">
-           <label for="itext">inquiry</label>
-           <textarea rows="5" cols="60" name="inquiry" placeholder="type here" autocapitalize="off" required></textarea>
-           <button type="submit">Submit</button>
-        </form>
-   </div>
-      </div>
-     </div>
-
-    
-
+     <!-- main content: contact form -->
+    <main>
+      <section class="contact-section">
+        <article class="contact-article">
+         <h1>CONTACT US</h1>
+         <div class="contact-form"> <!--container-->
+            <form action="">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="your name..">
+              <label for="lname">last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="your last name">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="email address">
+              <label for="text">Inquiry</label>
+              <textarea rows="5" cols="60" name="inquiry" placeholder="type here" required></textarea>
+             
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+  
     <!--THE FOOTER-->
-    <div class="footer">
+    <footer class="footer">
         <img src="../assets/images/Footer Content.png" alt="footer image">
         <div class="footer-text">
           Terms Of Use / Support / FAQ / Privacy Statement
         </div>
-     </div>
+    </footer>
+  </body>
 
   </html>

@@ -3,99 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="payment">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>payment details</title>
   </head>
   <body>
       <!-- THE PAGE BANNER -->
-      <div class="banner">
+      <header class="banner">
         <img src="../assets/images/SquareEyes_Logo.png" class="banner-logo" />
-        <div class="banner-buttons-div">
+        <nav class="banner-nav">
             <a href="index.html"><img src="../assets/images/Home Page.png" class="banner-icon"/></a>
             <a href="genre.html" class="banner-button">Genre</a>
             <a href="about_us.html" class="banner-button">About us</a>
             <a href="contact_us.html" class="banner-button">Contact us</a>
             <a href="checkout.html"><img src="../assets/images/cart.png" class="banner-icon"/></a>
-      </div>
-    </div>
-    <!--payment details-->
-    <div class="container">
-      <form action="">
-        <div class="row">
-          <div class="col">
-             <h3 class="title">Billing address</h3> 
-          <div class="inputbox">
-              <span>Full name</span>
-              <input type="text" placeholder="full name">
-          </div>
-          <div class="inputbox">
-              <span>Last name</span>
-              <input type="text" placeholder="last name">
-           </div>
-           <div class="inputbox">
-              <span>Email</span>
-              <input type="text" placeholder="yahoo.com">
-           </div>
-           <div class="inputbox">
-              <span>Address/street name</span>
-              <input type="text" placeholder="address">
-           </div>
-           <div class="inputbox">
-              <span>City/town</span>
-              <input type="text" placeholder="city">
-           </div>
-           <div class="inputbox">
-              <span>Postcode</span>
-              <input type="text" placeholder="postcode">
-           </div>
-        </div>
-        <div class="flex">
-            <div class="inputbox">
-              <span>Country</span>
-              <input class="text" placeholder="country">
-           </div>
-          </div>
-          <div class="col">
-            <h3 class="title">Payment</h3> 
-            <div class="inputbox">
-              <span>cards accepted</span>
-              <img src="../assets/images/icons8-apple-pay-48-2.png" alt="">
-              <img src="../assets/images/icons8-mastercard-48.png" alt="">
-              <img src="../assets/images/icons8-visa-48.png" alt="">
-           </div>
-           <div class="inputbox">
-              <span>cardholder name</span>
-              <input type="text" placeholder="name">
-           </div>
-           <div class="inputbox">
-              <span>card number</span>
-              <input type="text" placeholder="1111-222-3333">
-           </div>
-           <div class="inputbox">
-              <span>exp month</span>
-              <input type="text" placeholder="09">
-           </div>
-           <div class="inputbox">
-              <span>exp year</span>
-              <input type="text" placeholder="2027">
-           </div>
-           <div class="inputbox">
-              <span>CVV</span>
-              <input type="text" placeholder="XXX">
-           </div>
-         </div>
-        </div>
-        <!-- <a href="checkout_success.html"><input type="submit" value="proceed to payment" class="submit-btn"></a> -->
-        <a href="checkout_success.html" class="banner-button">Proceed to payment</a>
-      </form>
-    </div>
+        </nav>
+      </header>
 
-    <!--THE FOOTER-->
-    <div class="footer">
-        <img src="../assets/images/Footer Content.png" alt="footer image">
-        <div class="footer-text">
-          Terms Of Use / Support / FAQ / Privacy Statement
-        </div>
-     </div>
+    <!--payment details-->
+      <section class="payment-details">
+         <div class="container">
+            <form action="">
+               <div class="form-row">
+                  <div class="col">
+                     <h2 class="title">Billing address</h2> 
+                     <div class="inputbox">
+                       <label for="fullname">Full name</label> 
+                       <input type="text" id="fullname" placeholder="Enter full name">
+                       <input type="text" id="lastname" placeholder="Enter last name">
+                       <input type="text" id="email" placeholder="Enter email">
+                       <input type="text" id="address" placeholder="Enter address">
+                       <input type="text" id="city" placeholder="Enter city">
+                       <input type="text" id="postcode" placeholder="Enter postcode"> 
+                     </div>
+                  </div>
+                  <div class="col">
+                     <h2 class="title">Payment</h2> 
+                     <div class="inputbox">
+                        <label for="cards accepted">cards accepted</label>
+                        <img src="../assets/images/icons8-apple-pay-48-2.png" alt="apple pay icon">
+                        <img src="../assets/images/icons8-mastercard-48.png" alt="mastercard icon">
+                        <img src="../assets/images/icons8-visa-48.png" alt="visa icon">
+                     </div>
+                     <div class="inputbox">
+                       <label for="cardholder name">cardholder name</label> 
+                       <input type="text" id="card number" placeholder="Enter card number">
+                       <input type="text" id="exp month" placeholder="Enter (MM)">
+                       <input type="text" id="wxp year" placeholder="Enter (YYYY)">
+                       <input type="text" id="CVV" placeholder="Enter CVV">
+                     </div>
+                  </div>
+               </div>
+                 <!-- <a href="checkout_success.html"><input type="submit" value="proceed to payment" class="submit-btn"></a> -->
+               <a href="checkout_success.html" class="banner-button-c">Proceed to payment</a>
+            </form>
+         </div>
+      </section>
+
+      <!--THE FOOTER-->
+      <footer class="footer">
+         <img src="../assets/images/Footer Content.png" alt="footer image">
+         <div class="footer-text">
+            Terms Of Use / Support / FAQ / Privacy Statement
+         </div>
+      </footer>
   </body>
 </html>
