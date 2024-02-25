@@ -5,76 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="genre">
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
     <title>genre</title>
   </head>
   <body>
     <!-- THE PAGE BANNER -->
     <header class="banner">
-      <img src="../assets/images/SquareEyes_Logo.png" alt="Square Eyes_Logo" class="banner-logo" />
+      <img src="../assets/images/SquareEyes_Logo.png"  alt="square eyes logo" class="banner-logo" />
       <nav class="banner-buttons-div">
-        <a href="index.html"><img src="../assets/images/Home Page.png" alt="home page icon" class="banner-icon"/></a>
+        <a href="index.html"><i class="fa fa-home fa-3x" class="banner-icon"></i></a>
         <a href="genre.html" class="banner-button">Genre</a>
         <a href="about_us.html" class="banner-button">About us</a>
         <a href="contact_us.html" class="banner-button">Contact us</a>
-        <a href="checkout.html"><img src="../assets/images/cart.png" alt="cart icon"  class="banner-icon"/></a>
+        <a href="cart.html"><i class="fa fa-shopping-cart fa-3x" class="banner-icon"></i></a>
       </nav>
     </header>
+   
+    <main>
+      <h1>List of Movies</h1>
+      <section>
+        <div class="movies-container" id="movies-container"></div>
+        <script src="MoviesComponent.js"></script>
+      </section>
+    </main>
+    
+    <!-- THE MOVIE LIST
+    
+    <main>
+      <section class="featured-movie-div">
+          <div class="featured-movie-description-div">
+            <p class="featured-movie-p">
+              A woman washes ashore a small inhabited island after an accident.<br>The situation turns from bad to worse when she realizes there is a mysterious creature hunting at night.
+            </p>
+            <a href="product_preview.html" class="featured-movie-button">Buy now</a>
+          </div>
+      </section>
 
-    <!-- THE MOVIE LIST -->
-    <section class="movie-section">
-      <h1> ACTION</h1> 
-      <div class="carousel-container">
-        <div class="carousel-slide">
-          <img src="../assets/images/Square_Eyes_Cover1.jpeg" alt="the main characters of fast & furious 9 movie" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover2.jpeg" alt="godzila movie poster : a creature on a blue background is spitting fire towards the sky" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover3.jpeg" alt="once upon a time in hollywood , the three main characters are portayed on the poster" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="a woman is looking behind her and seems scared" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover1.jpeg" alt="the main characters of fast & furious 9 movie" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover2.jpeg" alt="godzila movie poster : a creature on a blue background is spitting fire towards the sky" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover3.jpeg" alt="once upon a time in hollywood , the three main characters are portayed on the poster" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="a woman is looking behind her and seems scared" class="img-poster">
+      <section>
+          <h1>List of Movies</h1>
+          <div class="movies-container" id="movies-container"></div>
+      </section>
+  </main>
+
+     is looking behind her and seems scared" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover7.jpeg" alt="the anti-hero Batman played by Robert P. is on the cover of the movie poster" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster" id="movies-container">
+          <img src="../assets/images/nun.jpeg" alt="a nun face is split in two, one light face aat the bottom and a darker face at the top" class="img-poster" id="movies-container">
+       </div>
+     </div>
+    </section> 
+
+    <section class="movie-section"><section class="movie-section">
+      <h1> ACTION</h1>  -->
+      <!-- <div class="carousel-container"> <div class="movies-container" id="movies-container">
+        <div class="carousel-slide" >
+          <img src="../assets/images/Square_Eyes_Cover1.jpeg" alt="the main characters of fast & furious 9 movie" class="img-poster" id="movies-container" >
+          <img src="../assets/images/Square_Eyes_Cover2.jpeg" alt="Godzilla movie poster : a creature on a blue background is spitting fire towards the sky" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover3.jpeg" alt="once upon a time in hollywood , the three main characters are portrayed on the poster" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="a woman is looking behind her and seems scared" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover1.jpeg" alt="the main characters of fast & furious 9 movie" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover2.jpeg" alt="Godzilla movie poster : a creature on a blue background is spitting fire towards the sky" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover3.jpeg" alt="once upon a time in hollywood , the three main characters are portrayed on the poster" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="a woman is looking behind her and seems scared" class="img-poster" id="movies-container">
        </div>
      </div>
     </section>
   
 
-    <section class="movie-section">
+     <section class="movie-section">
       <h1> HORROR / THRILLER</h1>
-      <div class="carousel-container">
+      <div class="movies-container" id="movies-container">
         <div class="carousel-slide">
-          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="HORROR" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover7.jpeg" alt="the anti-hero Batman played by Robert P. is on the cover of the movie poster" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster">
-          <img src="../assets/images/nun.jpeg" alt="a nun face is split in two, one light face aat the bottom and a darker face at the top" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="a woman is looking behind her and seems scared" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover7.jpeg" alt="the anti-hero Batman played by Robert P. is on the cover of the movie poster" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster">
-          <img src="../assets/images/nun.jpeg" alt="a nun face is split in two, one light face aat the bottom and a darker face at the top" class="img-poster">
-       </div>
-     </div>
-    </section> 
-
-    <section class="movie-section">
+          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="HORROR" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover7.jpeg" alt="the anti-hero Batman played by Robert P. is on the cover of the movie poster" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover4.jpeg" alt="scream movie poster: a masked person looking scary is looking at his victims" class="img-poster" id="movies-container">
+          <img src="../assets/images/nun.jpeg" alt="a nun face is split in two, one light face aat the bottom and a darker face at the top" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover5.jpeg" alt="a woman
       <h1>FAMILY</h1>
-      <div class="carousel-container">
+      <div class="movies-container" id="movies-container">
         <div class="carousel-slide">
-          <img src="../assets/images/Square_Eyes_Cover8.jpeg" alt="woody the cowboy hero in toy story is standing front center, surrounded by the other characters" class="img-poster">
-          <img src="/assets/images/Barbie_2023_poster.jpg" alt="FAMILY" class="img-poster">
-          <img src="/assets/images/Square_Eyes_Cover6.jpeg" alt="the  animated version of the entire familly Addams are standing for a family picture" class="img-poster">
-          <img src="/assets/images/Barbie_2023_poster.jpg" alt="barbie and ken are lounging on a big pink letter B on the movie poster with a light blue background" class="img-poster">
-          <img src="/assets/images/Square_Eyes_Cover6.jpeg" alt="the  animated version of the entire familly Addams are standing for a family picture" class="img-poster">
-          <img src="../assets/images/Square_Eyes_Cover8.jpeg" alt="woody the cowboy hero in toy story is standing front center, surrounded by the other characters" class="img-poster">
+          <img src="../assets/images/Square_Eyes_Cover8.jpeg" alt="woody the cowboy hero in toy story is standing front center, surrounded by the other characters" class="img-poster" id="movies-container">
+          <img src="/assets/images/Barbie_2023_poster.jpg" alt="FAMILY" class="img-poster" id="movies-container">
+          <img src="/assets/images/Square_Eyes_Cover6.jpeg" alt="the  animated version of the entire family Addams are standing for a family picture" class="img-poster" id="movies-container">
+          <img src="/assets/images/Barbie_2023_poster.jpg" alt="barbie and ken are lounging on a big pink letter B on the movie poster with a light blue background" class="img-poster" id="movies-container">
+          <img src="/assets/images/Square_Eyes_Cover6.jpeg" alt="the  animated version of the entire family Addams are standing for a family picture" class="img-poster" id="movies-container">
+          <img src="../assets/images/Square_Eyes_Cover8.jpeg" alt="woody the cowboy hero in toy story is standing front center, surrounded by the other characters" class="img-poster" id="movies-container">
        </div>
      </div>
-    </section>
-
+    </section> -->
     <!--THE FOOTER-->
     <footer class="footer">
-       <img src="../assets/images/Footer Content.png" alt="footer image">
-       <div class="footer-text">
-         Terms Of Use / Support / FAQ / Privacy Statement
+      <div class="footer-container">
+         <div class="socialIcons">
+             <a href=""><i class="fa-brands fa-facebook"></i></a>
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+             <a href=""><i class="fa-brands fa-youtube"></i></a>
+             <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="footer-text">
+             <p>Terms Of Use / Support / FAQ / Privacy Statement</p>
+          </div>
        </div>
     </footer>
   </body>

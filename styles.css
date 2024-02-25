@@ -1,0 +1,56 @@
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.movie-box {
+    width: calc(33.33% - 20px); /* Adjust as needed */
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.movie-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main{
+    flex-grow: 1;
+}
+.movie-details {
+    padding: 20px 0;
+}
+
+.movie-title {
+    margin-top: 0;
+}
+
+.movie-description,
+.movie-genre,
+.movie-rating,
+.movie-released,
+.movie-price {
+    margin-bottom: 5px;
+    margin: 20px;
+}
+
+.genre-container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    
+}
+  
+.cards-accepted{
+    font-size: 30px;
+    color: #f2f2f2;
+}
+

@@ -16,13 +16,26 @@ body {
   align-items: center;
   height: 10%;
   width: 100%;
-  padding: 30px;
+  padding: 20px; /*30*/
 }
 
-.banner-button {
+.banner-button{
+  color: #26064F;
+  text-align: center;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+  margin: 30px;
+  padding: 10px 20px;
+
+}
+
+
+
+
+/*.banner-buttons-div {
   width: 150px;
   background-color: rgba(51, 33, 158, 0.69);
-  border-radius: 5px;
+  border-radius: 10px;
   color: #FFF;
   text-decoration: none;
   font-family: Molengo;
@@ -33,6 +46,16 @@ body {
   text-align: center;
   align-items: center;
   
+}*/
+.banner-buttons-div
+.banner-icon{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding: 10vw;
+  align-items: center;
+  height: 1.8rem;
+  width:150px;
 }
 
 .nav{
@@ -49,7 +72,7 @@ body {
 
 }
 .banner-button:hover{
-  background-color: rgb(118, 118, 205);
+  background-color: #11699A;
 }
 .banner-logo {
   width: 20vw;
@@ -58,15 +81,8 @@ body {
 }
 
 .banner-icon {
-  width: 55px;
-  height: 50px;
-}
-
-.banner-buttons-div {
-  width: 60vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width:100%;
+  height: 5rem;
 }
 
 .featured-movie-div {
@@ -147,7 +163,7 @@ body {
   color: #FFF;
 }
 
-.carousel-container {
+ .carousel-container{
   width: 100%;
   overflow-x: scroll;
   display: flex;
@@ -157,6 +173,8 @@ body {
   animation: carouselanimation 20s infinite linear; 
 }
 
+
+  
 @keyframes carouselAmination {
   0% {transform: translateX(0); }
   100% {transform: translateX(-100%); }
@@ -169,15 +187,15 @@ body {
   display: flex;
   gap: 9px;
   overflow:scroll;
-  white-space: nowrop; /*prevent slides from wrapping to the nextline*/
+  white-space: nowrop; /*prevent slides from wrapping to the next line*/
 }
 
 .carousel-slide {
-  height: 37vh;
+  height: 80%h;
   object-fit: cover;
   display: flex;
   flex-direction: row; 
-  width: 11%; /* 10%each slide has a widht of 10% of the carousel widht */
+  width: 100%; /* 10% each slide has a width of 10% of the carousel width */
   
 }
 
@@ -188,31 +206,122 @@ body {
 }
 
 .img-poster {
-  border-radius: 15px;
-  padding: 5px;
+ width: 100%;
+ height: 90%;
+ border-radius: 15px;
+ padding: 5px;
+ margin-bottom: 20px;
+
+ /** width: calc(33.33% - 20px); */ /* Adjust as needed */
+ 
+ background-color: #f2f2f2;
+ border: 1px solid #ccc;
+ box-sizing: border-box;
+ padding: 10px;
+
+ display: inline-block;
+}
+
+.cart-page, 
+.cart-section{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #FFF;
+
+}
+.movie-list,
+.details{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.movie-details {
+    padding: 10px 0;
+}
+
+.movie-title {
+    margin-top: 0;
+}
+
+.movie-description,
+.movie-genre,
+.movie-rating,
+.movie-released,
+.movie-price {
+    margin-bottom: 5px;
+} 
+
+.genre-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; 
+}
+.movies-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.movie-box{
+  width: calc(33.33% 20px);
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .footer {
-  background-color: none;
-  padding: 40px 0;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  padding: 20px 0;
+
+}
+/* footer section  */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container{
+  width: 100vw;
+  height: 30vh;
+  padding: 70px 30px 20px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color:#11699A
+  opacity: 0.9;
+}
+
+.footer-text{
+  width: 100vw;
+  padding: 2rem;
   text-align: center;
 }
-
-.footer img {
-  width: auto;
-  height: 7vh;
-  object-fit: contain;
-  margin-bottom: 20px;
+/*hover effect*/
+.socialIcons a:hover{
+  background-color: #4604aa;
+  transition: 0.5s;
 }
-
-.footer-text {
- 
+.socialIcons a:hover i{
   color: white;
-  font-size: 24px;
-  font-family: Crimson Text,sans-serif;
-  font-weight: 400;
-  text-transform:capitalize;
-  word-wrap: break-word;
+  transition: 0.5s;
 }
 
 /* contact us page */
@@ -226,8 +335,6 @@ body {
   margin:auto;
 
 }
-
-
 
 .contact-article h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -374,6 +481,7 @@ label {
 
 .selected-movie-img {
   width: 100%;
+  height: 30%;
 }
 
 .selected-movie h1,
@@ -385,6 +493,7 @@ label {
 }
 .banner-button{
   display: flex;
+  color: #26064F;
   align-items: center;
   text-align: center;
   margin-top: 2vw;
@@ -398,9 +507,25 @@ label {
 
 }
 
-.selected-movie-p {
+.container-movie-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
   padding: 20px;
-  color: #000;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 5rem;
+  height: auto;
+
+}
+
+.selected-movie-p{
+  color: #11699A;
+}
+/*.selected-movie-p {
+  padding: 20px;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.5;
@@ -408,17 +533,21 @@ label {
   display: flex;
   text-align: justify;
 
-}
+}*/
 
-.checkout-success-div {
+/*.checkout-success-div {
   width: 30%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #FFF;
-  padding-bottom: 50px;
-  background-color: #0F2029;
+  padding-bottom: 5rem;
+  
+}*/
+.checkout-success-div i{
+  padding: 5rem;
+  font-size: 48px;
+  color: #04aa6d;
 }
 
 /* checkout page*/
@@ -429,14 +558,14 @@ label {
   background-color: #0F2029 ;
   padding: 50px;
   box-shadow: #0F2029;
-  width: 80%;
+  width: 40%;
   margin: 2rem;
   margin-top: 10px;
   overflow: hidden;
   align-items: center;
   display: flexbox;
-  
 }
+  
 .title{
   color: #11699A;
   padding: 1rem;
@@ -486,8 +615,78 @@ img{
 
 }
 
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+/* CSS - NEW PART */
+
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.movie-box {
+  width: calc(33.33% - 20px); /* Adjust as needed */
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.movie-box{
+  justify;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-details {
+  padding: 20px 0;
+}
+
+.movie-title {
+  margin-top: 0;
+}
+
+.movie-description,
+.movie-genre,
+.movie-rating,
+.movie-released,
+.movie-price {
+  margin-bottom: 5px;
+  margin: 20px;
+}
+
+.genre-container{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  
+}
+
+.cards-accepted{
+  font-size: 30px;
+  color: #FFF;
+}
 
 /* desktop */
+
 @media screen and (min-width: 1280px){
   *{
     margin: 0;
@@ -706,6 +905,17 @@ img{
     word-wrap: break-word;
   }
   
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
   /* contact us page */
   
   .contact-section{
@@ -976,6 +1186,8 @@ img{
     align-items: center;
   
   }
+
+
 
 }
 
@@ -1467,4 +1679,32 @@ img{
     align-items: center;
   
   }
+
+  .socialIcons{
+    display: flex;
+    justify-content: center;
 }
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+  font-size: 2em;
+  color: #898121E5;
+  opacity: 0.9;
+}
+/* hover effect on social media Icons*/
+.socialIcons a:hover{
+  background-color: #898121E5;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+
+

@@ -4,37 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <title>product previeww</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="cart.html"></script>
+    <title>product preview</title>
   </head>
   <body>
-    <!-- THE PAGE BANNER -->
-    <div class="banner">
-      <img src="../assets/images/SquareEyes_Logo.png" class="banner-logo" />
-      <div class="banner-buttons-div">
-        <a href="index.html"><img src="../assets/images/Home Page.png" class="banner-icon"/></a>
-        <a href="genre.html" class="banner-button">Genre</a>
-        <a href="about_us.html" class="banner-button">About us</a>
-        <a href="" class="banner-button">Contact us</a>
-        <a href="checkout.html"><img src="../assets/images/cart.png" class="banner-icon"/></a>
-      </div>
-    </div>
-  <!-- MOVIE DESCRIPTION -->
-
-  <div class="selected-movie-div">
-    <div class="checkout-success-div">
-    <img src="../assets/images/icons8-order-completed-96.png" style="padding: 50px"/>
-      <h3 style="color: white">Order successfully placed!</h3>
-      <p class="selected-movie-p">Your order has been succesfully placed and has been processed, please check your email. </p>
-      <a href="index.html" class="banner-button">Back to homepage</a>
-    </div>  
-  </div>
-
-
-    <!--THE FOOTER-->
-    <div class="footer">
-        <img src="../assets/images/Footer Content.png" alt="footer image">
-        <div class="footer-text">
-          Terms Of Use / Support / FAQ / Privacy Statement
+    <header>
+      <div class="banner">
+        <img src="../assets/images/SquareEyes_Logo.png" class="banner-logo" />
+        <div class="banner-buttons-div">
+          <a href="index copy.html"><i class="fa fa-home fa-3x" class="banner-icon"></i></a>
+          <a href="genre.html" class="banner-button">Genre</a>
+          <a href="about_us.html" class="banner-button">About us</a>
+          <a href="contact_us.html" class="banner-button">Contact us</a>
+          <a href="checkout.html"><i class="fa fa-shopping-cart fa-3x" class="banner-icon"></i></a>
         </div>
-     </div>
-      
+      </div>
+    </header>
+
+    <main>
+      <section class="container-movie-div">
+        <div class="checkout-success-div">
+          <i class="fa fa-check-circle" ></i> 
+          <h3 style="color: white">Order successfully placed!</h3>
+          <p class="selected-movie-p" style="color: #11699A;">Your order has been successfully placed and has been processed, please check your email for order confirmation details. </p>
+          <a href="index.html" class="banner-button">Back to homepage</a>
+        </div>  
+      </section>
+    </main>
+    <!--THE FOOTER-->
+    <footer>
+      <div class="footer-container">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-text">
+        <p>Terms Of Use / Support / FAQ / Privacy Statement</p>
+      </div>
+    </footer>
+</body>
+</html>
