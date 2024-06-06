@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ebf4d79038c1852cd7378fd9e8d31508ec953027
+
 # Square Eyes Project
 
 A website project aimed at creating an interactive and visually appealing experience for users interested in exploring movie genre and design. 
