@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Fast & Furious 9",
+      "genre": "Action",
+      "image": "../assets/images/Square_Eyes_Cover1.jpeg"
+    },
+    {
+      "title": "Godzilla",
+      "genre": "Action",
+      "image": "../assets/images/Square_Eyes_Cover2.jpeg"
+    },
+    {
+      "title": "Scream",
+      "genre": "Horror/thriller",
+      "image": "../assets/images/Square_Eyes_Cover4.jpeg"
+    },
+    {
+      "title": "Barbie",
+      "genre": "Family",
+      "image": "/assets/images/Barbie_2023_poster.jpg"
+    },
+    {
+      "title": "Toy Story",
+      "genre": "Family",
+      "image": "../assets/images/Square_Eyes_Cover8.jpeg"
+    },
+    {
+      "title": "Once Upon a Time in Hollywood",
+      "genre": "Action",
+      "image": "../assets/images/Square_Eyes_Cover3.jpeg"
+    }
+  ]
+  

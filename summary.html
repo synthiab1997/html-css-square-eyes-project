@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Summary</title>
+  <meta name="description" content="Summary - Square Eyes" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header class="banner">
+    <img src="../assets/images/SquareEyes_Logo.png" alt="Square Eyes Logo" class="banner-logo" />
+    <nav class="banner-buttons-div">
+      <a href="index.html"><i class="fa fa-home fa-3x"></i></a>
+      <a href="genre.html" class="banner-button">Genre</a>
+      <a href="about_us.html" class="banner-button">About Us</a>
+      <a href="contact_us.html" class="banner-button">Contact Us</a>
+      <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <h1>Thank You for Your Purchase!</h1>
+    <p>Your order was successful. Below is a summary of the movies you bought.</p>
+
+    <div id="summary-movies-container" class="movies-container"></div>
+
+    <div class="total-price">
+      <h2>Total Paid: <span id="total-price">$0.00</span></h2>
+    </div>
+
+    <a href="index.html" class="banner-button-c">Back to Home</a>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="socialIcons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-text">
+      <p>Terms Of Use / Support / FAQ / Privacy Statement</p>
+    </div>
+  </footer>
+
+  <script src="CartComponent.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      displaySummary();
+    });
+  </script>
+</body>
+</html>

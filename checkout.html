@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Checkout - Square Eyes"/>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <header class="banner">
+    <img src="../assets/images/SquareEyes_Logo.png" alt="Square Eyes Logo" class="banner-logo" />
+    <nav class="banner-buttons-div">
+      <a href="index.html"><i class="fa fa-home fa-3x"></i></a>
+      <a href="genre.html" class="banner-button">Genre</a>
+      <a href="about_us.html" class="banner-button">About Us</a>
+      <a href="contact_us.html" class="banner-button">Contact Us</a>
+      <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="checkout-container">
+      <h1>Checkout</h1>
+      <div id="checkout-movies-container" class="movies-container"></div>
+      <div class="total-price">
+        <h2>Total Price: <span id="total-price">$0.00</span></h2>
+      </div>
+    </section>
+
+    <section class="payment-details">
+      <div class="container">
+        <form id="payment-form">
+          <div class="form-row">
+            <div class="col">
+              <h2 class="title">Billing address</h2> 
+              <div class="inputbox">
+                <label for="fullname">Full name</label> 
+                <input type="text" id="fullname" placeholder="Enter full name">
+                <input type="text" id="lastname" placeholder="Enter last name">
+                <input type="email" id="email" placeholder="Enter email">
+                <input type="text" id="address" placeholder="Enter address">
+                <input type="text" id="city" placeholder="Enter city">
+                <input type="text" id="postcode" placeholder="Enter postcode"> 
+              </div>
+            </div>
+            <div class="col">
+              <h2 class="title">Payment</h2> 
+              <div class="inputbox">
+                <label>Cards accepted</label>
+                <a href="#"><i class="fab fa-cc-visa fa-2x"></i></a>
+                <a href="#"><i class="fab fa-cc-apple-pay fa-2x"></i></a>
+                <a href="#"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+              </div>
+              <div class="inputbox">
+                <label for="card-number">Card Number</label> 
+                <input type="text" id="card-number" placeholder="Enter card number">
+                <input type="text" id="exp-month" placeholder="Enter (MM)">
+                <input type="text" id="exp-year" placeholder="Enter (YYYY)">
+                <input type="text" id="CVV" placeholder="Enter CVV">
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="banner-button-c">Proceed to payment</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="socialIcons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-text">
+      <p>Terms Of Use / Support / FAQ / Privacy Statement</p>
+    </div>
+  </footer>
+
+  <script src="CartComponent.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchCartMovies();
+
+      document.getElementById("payment-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        localStorage.removeItem("cart");
+        window.location.href = "checkout_success.html";
+      });
+    });
+  </script>
+</body>
+</html>

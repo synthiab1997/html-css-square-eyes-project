@@ -2,5 +2,6 @@
     "cSpell.words": [
         "fetchdata"
     ],
-    "livePreview.defaultPreviewPath": "/index copy.html"
+    "livePreview.defaultPreviewPath": "/index copy.html",
+    "liveServer.settings.port": 5501
 }

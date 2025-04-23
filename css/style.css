@@ -10,14 +10,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.banner {
+
+.header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 10%;
   width: 100%;
   padding: 20px; /*30*/
-}
+}*/
 
 .banner-button{
   color: #26064F;
@@ -28,9 +29,6 @@ body {
   padding: 10px 20px;
 
 }
-
-
-
 
 /*.banner-buttons-div {
   width: 150px;
@@ -47,7 +45,8 @@ body {
   align-items: center;
   
 }*/
-.banner-buttons-div
+
+/*.nav .banner-buttons-div
 .banner-icon{
   display: flex;
   flex-flow: row nowrap;
@@ -56,19 +55,57 @@ body {
   align-items: center;
   height: 1.8rem;
   width:150px;
+  
 }
 
 .nav{
+ 
   flex-flow: row nowrap;
   display:flex ;
   align-items: center;
   justify-content: space-evenly;
+}*/
+
+/* Style for the navigation bar */
+.nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly; 
+  align-items: center;
+  padding: 10px 30px;
+  background-color: none; 
 }
+
+.nav-bar a {
+  color: white;
+  text-decoration: none; 
+  font-size: 25px; 
+  margin: 0 10px; 
+}
+
+.nav-bar a i{
+  font-size:38px;
+}
+
+.nav-bar a:hover {
+  color: #fe37f1; 
+}
+
+
+/* Style for the icons in the navbar */
+.banner-icon {
+  font-size: 30px;
+  margin-right: 10px; /* Adds some spacing to the right of icons */
+}
+.nav-bar .fa {
+  margin-right: 8px; /* Adds some spacing to the right of icons */
+}
+
 
 .banner-buttons-div a{
   text-align: center;
   transition: background-color 0.4s ease;
-  font-weight: bold;
+  font-weight:bolder;
 
 }
 .banner-button:hover{
@@ -80,10 +117,8 @@ body {
   padding-right: 6vw;      
 }
 
-.banner-icon {
-  width:100%;
-  height: 5rem;
-}
+
+
 
 .featured-movie-div {
   width: 100%;
@@ -207,19 +242,16 @@ body {
 
 .img-poster {
  width: 100%;
- height: 90%;
+ height: 80%;
  border-radius: 15px;
  padding: 5px;
  margin-bottom: 20px;
-
- /** width: calc(33.33% - 20px); */ /* Adjust as needed */
- 
  background-color: #f2f2f2;
  border: 1px solid #ccc;
  box-sizing: border-box;
  padding: 10px;
-
  display: inline-block;
+ /** width: calc(33.33% - 20px); */ /* Adjust as needed */
 }
 
 .cart-page, 
@@ -230,15 +262,14 @@ body {
   color: #FFF;
 
 }
-.movie-list,
-.details{
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
+.movie-details-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
 }
-
-.movie-details {
-    padding: 10px 0;
+.movie-details-container img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .movie-title {
@@ -305,7 +336,7 @@ body {
 }
 .socialIcons a i{
   font-size: 2em;
-  color:#11699A
+  color:#11699A;
   opacity: 0.9;
 }
 
@@ -322,6 +353,27 @@ body {
 .socialIcons a:hover i{
   color: white;
   transition: 0.5s;
+}
+
+/*swiper*/
+.swiper {
+  width: 90%;
+  padding: 2rem 0;
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.movie-card h3 {
+  margin: 0.5rem;
 }
 
 /* contact us page */
